@@ -1,0 +1,69 @@
+<templateSet group="Scala_Templates">
+  <template name="I" value="Int" description="Int" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="L" value="Long" description="Long" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="v" value="val $NAME$ = $END$" description="val" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="S" value="String" description="String" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="O" value="Option[$END$]" description="Option" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="d" value="def $NAME$($END$): $RET$ = {&#10;  $END$&#10;}" description="function" toReformat="true" toShortenFQNames="false">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="c" value="case $CASE$ =&gt; $RETURN$" description="case" toReformat="true" toShortenFQNames="true">
+    <variable name="CASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="at" value="&quot;$when$&quot; must {&#10;    &quot;$then$&quot; in {&#10;      val expect = $END$&#10;    }&#10;  }" description="Add Test case for WordSpec" toReformat="true" toShortenFQNames="true">
+    <variable name="when" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="then" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="dr" value="describe(&quot;$TITLE$&quot;) {&#10;  $END$&#10;}" description="describe for FunSpec" toReformat="true" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="it" value="it(&quot;$TITLE$&quot;) {&#10;  val expect = $END$&#10;}" description="it for FunSpec" toReformat="true" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+  <template name="wst" value="&quot;#$TestTitle$&quot; when {&#10;  &quot;$when$&quot; must {&#10;    &quot;$then$&quot; in {&#10;      val expect = $END$&#10;    }&#10;  }&#10;}" description="WordSpec Test case" toReformat="true" toShortenFQNames="true">
+    <variable name="TestTitle" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="when" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="then" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SCALA" value="true" />
+    </context>
+  </template>
+</templateSet>
